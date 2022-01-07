@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github.io/react__course__hooks/static/css/main.073c9b0a.css",
+    "main.js": "/github.io/react__course__hooks/static/js/main.f5e9a5de.js",
+    "static/js/787.5fd43978.chunk.js": "/github.io/react__course__hooks/static/js/787.5fd43978.chunk.js",
+    "static/media/logo.svg": "/github.io/react__course__hooks/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/github.io/react__course__hooks/index.html",
+    "main.073c9b0a.css.map": "/github.io/react__course__hooks/static/css/main.073c9b0a.css.map",
+    "main.f5e9a5de.js.map": "/github.io/react__course__hooks/static/js/main.f5e9a5de.js.map",
+    "787.5fd43978.chunk.js.map": "/github.io/react__course__hooks/static/js/787.5fd43978.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f5e9a5de.js"
+  ]
+}
