@@ -1,0 +1,32 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  display: flex;
+}
+
+.menu {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  border: 2px solid black;
+  display: flex;
+  flex: 1;
+}
+.footer {
+  border: 2px solid black;
+  display: flex;
+  flex: 1;
+}
+.header {
+  border: 2px solid black;
+  display: flex;
+  flex: 1;
+}
+.item img {
+  width: 100px;
+}
