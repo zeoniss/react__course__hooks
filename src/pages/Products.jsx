@@ -1,4 +1,5 @@
 import ProductList from "../components/ProductList"
+import { useState } from "react"
 
 const products = [
   {
@@ -32,6 +33,7 @@ const products = [
 ]
 
 const Products = () => {
+  const [value, setValue] = useState([])
   return (
     <div className='products'>
       <ul>

@@ -5,6 +5,7 @@
 
 .body {
   display: flex;
+  background-color: burlywood;
 }
 
 .menu {
@@ -21,12 +22,4 @@
   border: 2px solid black;
   display: flex;
   flex: 1;
-}
-.header {
-  border: 2px solid black;
-  display: flex;
-  flex: 1;
-}
-.item img {
-  width: 100px;
 }
