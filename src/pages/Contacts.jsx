@@ -1,5 +1,3 @@
-import ProductList from "../components/ProductList"
-
 const Contacts = () => {
   const handleClick = () => console.log("hello")
   return (

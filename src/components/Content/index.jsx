@@ -1,14 +1,12 @@
-import Products from "../../pages/Products"
-import Contacts from "../../pages/Contacts"
-import Counter from "../../pages/Counter"
+import { routes } from "../routes"
 
 const Content = () => {
   const { pathname } = window.location
   return (
     <div className='content'>
-      {pathname === "/products" && <Products />}
-      {pathname === "/contacts" && <Contacts />}
-      {pathname === "/counter" && <Counter />}
+      {routes.map(({ path, component: Component }) =>
+        pathname === path ? <Component key={path} /> : null
+      )}
     </div>
   )
 }

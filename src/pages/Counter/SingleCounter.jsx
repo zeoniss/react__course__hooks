@@ -4,6 +4,11 @@ import { createUseStyles } from "react-jss"
 const useStyles = createUseStyles({
   counter: { padding: 10 },
   buttons: { display: "flex" },
+  button: {
+    "&:hover": {
+      backgroundColor: "tomato",
+    },
+  },
 })
 
 const limitValue = 500
@@ -38,9 +43,13 @@ const SingleCounter = () => {
         </select>
       </label>
       <div className={classes.buttons}>
-        <button onClick={handleDecrement}>-</button>
+        <button className={classes.button} onClick={handleDecrement}>
+          -
+        </button>
         <p>{value}</p>
-        <button onClick={handleIncrement}>+</button>
+        <button className={classes.button} onClick={handleIncrement}>
+          +
+        </button>
       </div>
     </div>
   )

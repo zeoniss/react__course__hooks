@@ -1,44 +1,29 @@
 import ProductList from "../components/ProductList"
-import { useState } from "react"
-
-const products = [
-  {
-    id: 1,
-    name: "phone 1",
-    price: "5000",
-    count: 10,
-    img: "phone",
-  },
-  {
-    id: 2,
-    name: "phone 2",
-    price: "21000",
-    count: 8,
-    img: "phone",
-  },
-  {
-    id: 3,
-    name: "phone 3",
-    price: "22000",
-    count: 0,
-    img: "phone",
-  },
-  {
-    id: 4,
-    name: "notebook",
-    price: "39000",
-    count: 6,
-    img: "notebook",
-  },
-]
+import ProductForm from "../components/ProductForm"
+import { useState, useEffect } from "react"
 
 const Products = () => {
-  const [value, setValue] = useState([])
+  const [products, setProducts] = useState([])
+  const handleCreateProduct = (newItem) => {
+    setProducts((prev) => [...prev, newItem])
+  }
+
+  //ComponentDidMount
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("products"))
+    setProducts(data)
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("products", JSON.stringify(products))
+  }, [products])
+
   return (
     <div className='products'>
-      <ul>
-        <ProductList products={products} />
-      </ul>
+      <ProductForm onSubmit={handleCreateProduct} />
+
+      {/* Массив передается в ProductItem и там генерируем список */}
+      <ProductList products={products} />
     </div>
   )
 }
