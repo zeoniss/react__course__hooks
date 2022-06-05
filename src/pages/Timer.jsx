@@ -7,17 +7,22 @@ const Timer = () => {
 
   //ComponentDidMount
   useEffect(() => {
-    setInterval(() => {
+    const id = setInterval(() => {
       setDate(new Date())
     }, 1000)
     console.log("did mount")
+    return () => {
+      console.log("will unmount")
+      clearInterval(id)
+    }
   }, [])
 
   console.log("render")
 
   useEffect(() => {
     console.log("did update")
-  }, [])
+    localStorage.setItem("date", JSON.stringify(date))
+  })
 
   return (
     <div className='timer'>

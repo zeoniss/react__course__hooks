@@ -17,9 +17,9 @@ const Counters = () => {
     localStorage.setItem("counters", JSON.stringify(counters))
   }, [counters])
   // //component did update - allways after render
-  // useEffect(() => {
-  //   console.log("render")
-  // })
+  useEffect(() => {
+    // console.log("render")
+  })
   const createCounter = () =>
     setCounters((prevState) => [
       ...prevState,
