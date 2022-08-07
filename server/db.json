@@ -15,16 +15,5 @@
   ],
   "profile": {
     "name": "typicode"
-  },
-  "products": [
-    {
-      "id": 1655027869287,
-      "name": "Apple",
-      "price": 12121212,
-      "count": 2,
-      "color": "black",
-      "software": true,
-      "img": "phone"
-    }
-  ]
+  }
 }
